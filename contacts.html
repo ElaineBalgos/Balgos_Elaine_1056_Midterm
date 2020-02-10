@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Welcome to Cameron's Brewery 2.0</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -15,7 +13,7 @@
 <![endif]-->
 <body>
   <div id="siteContainer"><!--open container-->
-    <h1 class="hidden">Cameron's - Index</h1>
+    <h1 class="hidden">Cameron's - Contacs</h1>
     <header>
       <h2 class="hidden">Main Navigation</h2>
       <div class="header"><!--open header-->
@@ -47,51 +45,65 @@
     </header>
 
     <main>
-      <div class="mainCon"><!--open index-->
-        <h2 class="hidden">Content</h2>
-        <div id="mainContent">
-          <img src="images/mainContent2.jpg" alt="beerBrewing">
+      <div class="mainContacts"> <!--open contacts-->
+        <h2 class="hidden">Contacts</h2>
+
+        <div id="contacts">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11581.28820870635!2d-79.67660900000001!3d43.474749!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b5ccb127f82f5%3A0x5b0fa9d452bdeff2!2s1165%20Invicta%20Dr%2C%20Oakville%2C%20ON%20L6H%204M1!5e0!3m2!1sen!2sca!4v1581278637519!5m2!1sen!2sca"
+          width="960" height="350" style="border:0;" allowfullscreen=""></iframe>
+          <a>CONTACT US</a>
         </div>
-        <div id="subContentCon">
-          <h2 class="hidden">subContentContainer</h2>
-          <h3><span id="subEvents"><a href="events.html">EVENTS</a></span></h3>
-          <h3><span id="subProducts"><a href="products.html">PRODUCTS</a></span></h3>
-          <h3><span id="subContacts"><a href="contacts.html">CONTACTS</a></span></h3>
+
+        <div id="imageConContacts">
+          <h2 class="hidden">imageContentContainerProducts</h2>
+
+          <span class="company">CAMERON'S BREWING CO.</span>
+          <h3 class="hidden">Address</h3>
+          <p>1165 Invicta Drive, Oakville, Ontario L6H 4M1<br><br>
+            T905.849.8282<br><br>
+            F905.849.5578<br><br>
+            Mon-Fri: 9AM - 6PM / Sat and Sun: 10AM - 5PM</p>
+
+          <div id="socMediaContacts">
+            <h3 class="hidden">Social Media</h3>
+            <div class="igContacts">
+              <a href="https://www.instagram.com"><img src="images/ig.svg" alt="instagram"></a>
+            </div>
+            <div class="tContacts">
+              <a href="https://www.twitter.com"><img src="images/t.svg" alt="twitter"></a>
+            </div>
+            <div class="fbContacts">
+              <a href="https://www.facebook.com"><img src="images/fb.svg" alt="facebook"></a>
+            </div>
+            <div class="ytContacts">
+              <a href="https://www.youtube.com"><img src="images/yt.svg" alt="youtube"></a>
+            </div>
+          </div>
         </div>
-        <div id="featured">
-          <h2 class="hidden">featured</h2>
-          <h3><span>FEATURED BEERS</span></h3>
-          <p>
-            is committed to brewing beer of exceptional taste and quality. Its brewing
-            experts relentlessly pursue the development of new styles and the perfection of its
-            classic ales and lagers using the world’s finest all-natural ingredients.<br><br>
-            award winning products have been recognized over two hundred times at local,
-            national and worldwide brewing awards.
-          </p> <!--Content derived from the original Cameron's Website -->
-        </div>
-        <div id="imageCon">
-          <h2 class="hidden">imageContentContainer</h2>
-          <span class="jurassic">
-            <h3 class="hidden">Jurassic</h3>
-            <a class="hidden">jurassic</a>
-          </span>
-          <span class="cosmic">
-            <h3 class="hidden">Cosmic</h3>
-            <a class="hidden">cosmic</a>
-          </span>
-          <span class="ambear">
-            <h3 class="hidden">Ambear</h3>
-            <a class="hidden">ambear</a>
-          </span>
-          <!--<h3><span class="subImage">image</span></h3>
-          <h3><span class="subImage">image</span></h3>
-          <h3><span class="subImage">image</span></h3>-->
-        </div>
-        <!--<div id="latestUpate">
-          <h2 class="hidden">latestUpate</h2>
-          <h3><span>latestUpdate</span></h3>
-        </div>-->
-      </div><!--close index-->
+
+          <div id="contactArea">
+				    <h3 class="hidden">Contact Form</h3>
+				   	<p id="contactText">For more information about our various packages or to book a trip please use the form below.</p>
+  					  <form id="contactForm" action="form.php" method="post"></form>
+
+    					<label>Name: (required)</label>
+    					<input type="text" required size="30" placeholder="Enter your name">
+
+    					<label>Email: (required)</label>
+    					<input type="text" required size="30" placeholder="Enter your email">
+
+    					<label>Phone: (required)</label>
+    						<input type="tel" required size="30" placeholder="Enter your phone">
+
+    					<label>Comments: (required)</label>
+    					<textarea required cols="50" rows="8"></textarea>
+
+    					<label>What is 5 +4?</label>
+    					<input type="text" required size="30" placeholder="What is 5 + 4?">
+
+    					<input id="submit" type="submit" value="submit">
+					  </div>
+      </div><!--close contacts-->
     </main>
 
     <footer>
